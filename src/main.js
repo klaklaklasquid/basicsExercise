@@ -18,8 +18,12 @@ const sizes = {
 //* scene
 const scene = new THREE.Scene();
 
+//* ambient light
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+scene.add(ambientLight);
+
 //* material
-const outlineMaterial = new THREE.MeshBasicMaterial({
+const outlineMaterial = new THREE.MeshStandardMaterial({
   color: 0xffffff,
 });
 
@@ -27,39 +31,39 @@ const sunMaterial = new THREE.MeshBasicMaterial({
   color: "darkorange",
 });
 
-const mercuryMaterial = new THREE.MeshBasicMaterial({
+const mercuryMaterial = new THREE.MeshStandardMaterial({
   color: "#b1adad",
 });
 
-const venusMaterial = new THREE.MeshBasicMaterial({
+const venusMaterial = new THREE.MeshStandardMaterial({
   color: "#e3bb76",
 });
 
-const earthMaterial = new THREE.MeshBasicMaterial({
+const earthMaterial = new THREE.MeshStandardMaterial({
   color: "#9fc164",
 });
 
-const marsMaterial = new THREE.MeshBasicMaterial({
+const marsMaterial = new THREE.MeshStandardMaterial({
   color: "#c1440e",
 });
 
-const jupiterMaterial = new THREE.MeshBasicMaterial({
+const jupiterMaterial = new THREE.MeshStandardMaterial({
   color: "#bd7657",
 });
 
-const saturnMaterial = new THREE.MeshBasicMaterial({
+const saturnMaterial = new THREE.MeshStandardMaterial({
   color: "#c3924f",
 });
 
-const uranusMaterial = new THREE.MeshBasicMaterial({
+const uranusMaterial = new THREE.MeshStandardMaterial({
   color: "#62aee7",
 });
 
-const neptuneMaterial = new THREE.MeshBasicMaterial({
+const neptuneMaterial = new THREE.MeshStandardMaterial({
   color: "#2b378b",
 });
 
-const glowSunMaterial = new THREE.MeshBasicMaterial({
+const glowSunMaterial = new THREE.MeshStandardMaterial({
   color: "orange",
   transparent: true,
   opacity: 0.1,
